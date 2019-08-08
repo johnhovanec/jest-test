@@ -1,3 +1,6 @@
+# Jest testing application
+This repo is a test project for incorporating Jest test framework into a React application. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
