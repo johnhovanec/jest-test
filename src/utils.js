@@ -8,9 +8,19 @@ function testDifference (a, b) {
     return diff;
 }
 
+function createUser (fname, lname, age) {
+    let user = {
+        fname: fname,
+        lname: lname,
+        age: age,
+    }
+    return user;
+}
+
 const utils = {
     testSum,
     testDifference,
+    createUser,
 }
 
 export default utils;

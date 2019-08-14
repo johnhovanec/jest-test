@@ -2,6 +2,20 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import utils from './utils.js';
+import { Dropdown } from 'semantic-ui-react';
+
+const countryOptions = [
+  { key: 'af', value: 'af', text: 'Afghanistan' },
+  { key: 'ax', value: 'ax', text: 'Aland Islands' },
+  { key: 'al', value: 'al', text: 'Albania' },
+  { key: 'dz', value: 'dz', text: 'Algeria' },
+  { key: 'as', value: 'as', text: 'American Samoa' },
+  { key: 'ad', value: 'ad', text: 'Andorra' },
+]
+
+function handleOnChange(event, data) {
+  console.log(event, data.value)
+}
 
 function App() {
   return (
@@ -20,6 +34,13 @@ function App() {
         >
           Learn React
         </a>
+        <Dropdown
+          placeholder='Please select'
+          fluid
+          selection
+          options={countryOptions}
+          onChange={handleOnChange}
+        />
       </header>
     </div>
   );
